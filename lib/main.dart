@@ -1,3 +1,4 @@
+import 'package:animations/fourth_animation.dart';
 import 'package:animations/second_animation.dart';
 import 'package:animations/third_animation.dart';
 import 'package:flutter/material.dart';
@@ -17,9 +18,9 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       theme: ThemeData(
         primarySwatch: Colors.blue,
-        scaffoldBackgroundColor: Colors.black54,
+        scaffoldBackgroundColor: Colors.white,
       ),
-      home:  const AnimationThirdOne(),
+      home:  const AnimationFourthOne(),
     );
   }
 }
