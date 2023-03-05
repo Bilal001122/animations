@@ -1,5 +1,5 @@
-import 'package:animations/first_animation.dart';
 import 'package:animations/second_animation.dart';
+import 'package:animations/third_animation.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -19,8 +19,9 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         scaffoldBackgroundColor: Colors.black54,
       ),
-      home:  const AnimationSecondOne(),
+      home:  const AnimationThirdOne(),
     );
   }
 }
+
 
