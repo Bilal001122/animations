@@ -67,10 +67,16 @@ class Person {
   });
 }
 
-class DetailsPage extends StatelessWidget {
+class DetailsPage extends StatefulWidget {
   final Person person;
 
   const DetailsPage({Key? key, required this.person}) : super(key: key);
+
+  @override
+  State<DetailsPage> createState() => _DetailsPageState();
+}
+
+class _DetailsPageState extends State<DetailsPage> {
 
   @override
   Widget build(BuildContext context) {
@@ -101,13 +107,13 @@ class DetailsPage extends StatelessWidget {
                   );
               }
             },
-            tag: person.name,
-            child: Icon(person.emoji,size: 40,),
+            tag: widget.person.name,
+            child: Icon(widget.person.emoji,size: 40,),
           ),
         ),
       ),
       body: Text(
-        '${person.name} is ${person.age} years old',
+        '${widget.person.name} is ${widget.person.age} years old',
         style: const TextStyle(fontSize: 40),
       ),
     );

@@ -1,3 +1,4 @@
+import 'package:animations/fifth_animation.dart';
 import 'package:animations/fourth_animation.dart';
 import 'package:animations/second_animation.dart';
 import 'package:animations/third_animation.dart';
@@ -18,9 +19,9 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       theme: ThemeData(
         primarySwatch: Colors.blue,
-        scaffoldBackgroundColor: Colors.white,
+        scaffoldBackgroundColor: Colors.black54,
       ),
-      home:  const AnimationFourthOne(),
+      home:  const AnimationThirdOne(),
     );
   }
 }
