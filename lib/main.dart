@@ -1,3 +1,4 @@
+import 'package:animations/AnimationSix.dart';
 import 'package:animations/fifth_animation.dart';
 import 'package:animations/fourth_animation.dart';
 import 'package:animations/second_animation.dart';
@@ -21,7 +22,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         scaffoldBackgroundColor: Colors.black54,
       ),
-      home:  const AnimationThirdOne(),
+      home:  const AnimationSix(),
     );
   }
 }
